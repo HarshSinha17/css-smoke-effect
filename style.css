@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+body{
+  background-color: black;
+  text-align: center;
+}
+span{
+  color: white;
+  font-size: 80px;
+  display: inline-block;
+  font-family: 'Chango', cursive;
+}
+.active{
+  animation: smoke 0.5s linear forwards;
+  position: relative;
+}
+@keyframes smoke{
+  0%{
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateY(0px) translateX(0px) scale(1.0);
+  }
+  50%{
+    opacity: 1;
+    transform: translateY(-20px) translateX(-20px) scale(1.6);
+  }
+  100%{
+    filter: blur(20px);
+    opacity: 0.0;
+    transform: translateY(-60px) translateX(-30px) scale(2.0);
+  }
+}
